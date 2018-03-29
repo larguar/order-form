@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 <title>3 Offer Template</title>
 	
 	<link rel="stylesheet" href="https://use.typekit.net/evp8xzo.css">
@@ -20,7 +22,7 @@ body {
 h3, h4, h6, .badge {
     font-family: "soleil", sans-serif!important;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.5px;
 }
 h1 {
     font-size: 44px;
@@ -35,7 +37,7 @@ h3 {
 h6 {
     font-size: 18px;
     line-height: 24px;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 a.btn, div#order-form .btn {
     font-family: "soleil", sans-serif!important;
@@ -110,6 +112,9 @@ div#order-form form, .offer .card {
     font-weight: 700;
     color: #00487C;
 }
+label.form-check-label {
+    line-height: 22px;
+}
 .form-header-main {
     padding: 20px;
 }
@@ -150,11 +155,11 @@ div#order-form form .btn {
 						<h3>Choose Your Subscription</h3>
 					</div>
 					<div class="form-content">
-						<div class="form-check mb-3">
+						<div class="form-check mb-2">
 							<input class="form-check-input" type="radio" name="levelOne" id="level1" value="option1" checked>
 							<label class="form-check-label" for="level1">1 year <strong>Platinum</strong> Level at <strike>$99</strike> <strong>$79</strong></label>
 						</div>
-						<div class="form-check mb-3">
+						<div class="form-check mb-2">
 							<input class="form-check-input" type="radio" name="levelTwo" id="level2" value="option2">
 							<label class="form-check-label" for="level2">1 year <strong>Gold</strong> Level at <strong>$89</strong></label>
 						</div>
@@ -164,7 +169,7 @@ div#order-form form .btn {
 						</div>
 						<small class="form-text">When you pay for a subscription to <strong>The Seven-Figure Formula</strong> your credit card will be billed immediately. Then, when your <strong>The Seven-Figure Formula</strong> subscription is about to expire, we will automatically bill your card for an additional year.<br><br>This "auto-renew" feature does not obligate you in any way. What’s more, we’ll give you 30 days after your “auto-renew” charge to receive that year's subscription fee back in full.You will still have the entire length of your trial subscription to review <strong>The Seven-Figure Formula</strong>, entirely risk free.</small>
 						<div class="row">
-							<div class="col"><button id="showPanel2" class="btn btn-danger w-100 mt-4">Next Step »</button></div>
+							<div class="col col-12"><button id="showPanel2" class="btn btn-danger w-100 mt-4">Next Step »</button></div>
 						</div>
 					</div>
 				</div>
@@ -175,11 +180,11 @@ div#order-form form .btn {
 					</div>
 					<div class="form-content">
 						<div class="row">
-							<div class="form-group col">
+							<div class="form-group col col-12 col-sm-6">
 								<label for="firstName">First Name</label>
 								<input type="text" class="form-control" id="firstName">
 							</div>
-							<div class="form-group col">
+							<div class="form-group col col-12 col-sm-6">
 								<label for="lastName">Last Name</label>
 								<input type="text" class="form-control" id="lastName">
 							</div>
@@ -193,8 +198,8 @@ div#order-form form .btn {
 							<input type="email" class="form-control" id="email2">
 						</div>
 						<div class="row">
-							<div class="col"><button id="prevPanel1" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
-							<div class="col"><button id="showPanel3" class="btn btn-danger w-100 mt-4">Next »</button></div>
+							<div class="col col-12 col-sm-6"><button id="prevPanel1" class="btn btn-outline-danger w-100 mt-3">« Previous</button></div>
+							<div class="col col-12 col-sm-6"><button id="showPanel3" class="btn btn-danger w-100 mt-3">Next »</button></div>
 						</div>
 					</div>
 				</div>
@@ -219,11 +224,58 @@ div#order-form form .btn {
 						<div class="form-group">
 							<label for="state">State</label>
 							<select class="form-control" id="state">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
+								<option disabled selected>Select a State</option>
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
 							</select>
 						</div>
 						<div class="form-group">
@@ -250,11 +302,11 @@ div#order-form form .btn {
 						</div>
 						<div class="form-content">
 							<div class="row">
-								<div class="form-group col">
+								<div class="form-group col col-12 col-sm-6">
 									<label for="firstNameShipping">First Name</label>
 									<input type="text" class="form-control" id="firstNameShipping">
 								</div>
-								<div class="form-group col">
+								<div class="form-group col col-12 col-sm-6">
 									<label for="lastNameShipping">Last Name</label>
 									<input type="text" class="form-control" id="lastNameShipping">
 								</div>
@@ -274,11 +326,58 @@ div#order-form form .btn {
 							<div class="form-group">
 								<label for="stateShipping">State</label>
 								<select class="form-control" id="stateShipping">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
+									<option disabled selected>Select a State</option>
+									<option value="AL">Alabama</option>
+									<option value="AK">Alaska</option>
+									<option value="AZ">Arizona</option>
+									<option value="AR">Arkansas</option>
+									<option value="CA">California</option>
+									<option value="CO">Colorado</option>
+									<option value="CT">Connecticut</option>
+									<option value="DE">Delaware</option>
+									<option value="DC">District Of Columbia</option>
+									<option value="FL">Florida</option>
+									<option value="GA">Georgia</option>
+									<option value="HI">Hawaii</option>
+									<option value="ID">Idaho</option>
+									<option value="IL">Illinois</option>
+									<option value="IN">Indiana</option>
+									<option value="IA">Iowa</option>
+									<option value="KS">Kansas</option>
+									<option value="KY">Kentucky</option>
+									<option value="LA">Louisiana</option>
+									<option value="ME">Maine</option>
+									<option value="MD">Maryland</option>
+									<option value="MA">Massachusetts</option>
+									<option value="MI">Michigan</option>
+									<option value="MN">Minnesota</option>
+									<option value="MS">Mississippi</option>
+									<option value="MO">Missouri</option>
+									<option value="MT">Montana</option>
+									<option value="NE">Nebraska</option>
+									<option value="NV">Nevada</option>
+									<option value="NH">New Hampshire</option>
+									<option value="NJ">New Jersey</option>
+									<option value="NM">New Mexico</option>
+									<option value="NY">New York</option>
+									<option value="NC">North Carolina</option>
+									<option value="ND">North Dakota</option>
+									<option value="OH">Ohio</option>
+									<option value="OK">Oklahoma</option>
+									<option value="OR">Oregon</option>
+									<option value="PA">Pennsylvania</option>
+									<option value="RI">Rhode Island</option>
+									<option value="SC">South Carolina</option>
+									<option value="SD">South Dakota</option>
+									<option value="TN">Tennessee</option>
+									<option value="TX">Texas</option>
+									<option value="UT">Utah</option>
+									<option value="VT">Vermont</option>
+									<option value="VA">Virginia</option>
+									<option value="WA">Washington</option>
+									<option value="WV">West Virginia</option>
+									<option value="WI">Wisconsin</option>
+									<option value="WY">Wyoming</option>
 								</select>
 							</div>
 							<div class="form-group">
@@ -295,8 +394,8 @@ div#order-form form .btn {
 					<div class="form-content pt-0">
 						<small class="form-text text-dark"><strong>Your purchase may be subject to state sales tax.</strong></small>
 						<div class="row">
-							<div class="col"><button id="prevPanel2" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
-							<div class="col"><button id="showPanel4" class="btn btn-danger w-100 mt-4">Next »</button></div>
+							<div class="col col-12 col-sm-6"><button id="prevPanel2" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
+							<div class="col col-12 col-sm-6"><button id="showPanel4" class="btn btn-danger w-100 mt-3 mt-sm-4">Next »</button></div>
 						</div>
 					</div>
 				</div>
@@ -306,17 +405,17 @@ div#order-form form .btn {
 						<h3>Enter Your Billing Information</h3>
 					</div>
 					<div class="form-content">
-						<div class="form-check mb-3">
+						<div class="form-check mb-2">
 							<input class="form-check-input" type="radio" name="visa" id="visa" value="option1">
 							<label class="form-check-label" for="visa">Visa</label>
 							<i class="fa fa-cc-visa ml-1 text-secondary" aria-hidden="true"></i>
 						</div>
-						<div class="form-check mb-3">
+						<div class="form-check mb-2">
 							<input class="form-check-input" type="radio" name="mastercard" id="mastercard" value="option2">
 							<label class="form-check-label" for="mastercard">MasterCard</label>
 							<i class="fa fa-cc-mastercard ml-1 text-secondary" aria-hidden="true"></i>
 						</div>
-						<div class="form-check mb-3">
+						<div class="form-check mb-2">
 							<input class="form-check-input" type="radio" name="discover" id="discover" value="option1">
 							<label class="form-check-label" for="discover">Discover</label>
 							<i class="fa fa-cc-discover ml-1 text-secondary" aria-hidden="true"></i>
@@ -331,11 +430,11 @@ div#order-form form .btn {
 							<input type="number" class="form-control" id="cardNumber">
 						</div>
 						<div class="row">
-							<div class="form-group col">
+							<div class="form-group col col-12 col-sm-6">
 								<label for="expirationDate">Expiration Date</label>
 								<input type="date" class="form-control" id="expirationDate">
 							</div>
-							<div class="form-group col">
+							<div class="form-group col col-12 col-sm-6">
 								<label for="cvvCode">CVV Code </label>
 								<input type="number" class="form-control" id="cvvCode">
 							</div>
@@ -349,8 +448,8 @@ div#order-form form .btn {
 							<input type="text" class="form-control" id="cardNickname">
 						</div>
 						<div class="row">
-							<div class="col"><button id="prevPanel3" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
-							<div class="col"><button type="submit" class="btn btn-danger w-100 mt-4">Checkout »</button></div>
+							<div class="col col-12 col-sm-6"><button id="prevPanel3" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
+							<div class="col col-12 col-sm-6"><button type="submit" class="btn btn-danger w-100 mt-3 mt-sm-4">Checkout »</button></div>
 						</div>
 					</div>
 				</div>
