@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3 Offer Template</title>
+	
+	<link rel="stylesheet" href="https://use.typekit.net/evp8xzo.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+</head>
+	
+<style>
+* {
+	-webkit-font-smoothing: antialiased!important;
+}
+body {
+    font-family: "ff-meta-serif-web-pro", serif!important;
+}	
+h3, h4, h6, .badge {
+    font-family: "soleil", sans-serif!important;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+h1 {
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 700;
+}
+h3 {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+}
+h6 {
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.8;
+}
+a.btn, div#order-form .btn {
+    font-family: "soleil", sans-serif!important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+	
+p, li, label, small {
+    font-size: 16px;
+    line-height: 28px;
+    color: #555;
+}	
+small {
+    font-size: 12px;
+    line-height: 18px;
+}
+strong {
+    font-weight: 700;
+    font-style: italic;
+    color: #027BCE;
+}
+.text-dark strong {
+    color: #555!important;
+}
+.btn {
+    padding: 22px 10px;
+    font-size: 18px;
+    line-height: 14px;
+	color: #fff;
+	font-weight: 700;
+}
+.btn.btn-danger, a.btn.btn-danger:hover {
+    color: #fff!important;
+}
+.btn.btn-danger, .bg-danger {
+    background: #E02D2A!important;
+}
+.btn.btn-danger:hover {
+    background: #AF1E1D!important;
+}
+a.btn.btn-outline-light {
+    color: #fff;
+}
+a.btn.btn-outline-light:hover {
+    color: #E02D2A;
+}
+.btn-outline-danger {
+    color: #E02D2A;
+	border: 1px solid red#E02D2A;
+}
+.btn-outline-danger:hover {
+    background: #AF1E1D;
+}
+	
+	
+.text-secondary {
+	color: #027BCE!important;
+}	
+.bg-secondary {
+	background: #027BCE!important;
+}
+	
+
+div#order-form form, .offer .card {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+	border-radius: 3px!important;
+    overflow: hidden;
+}
+.form-group label {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #00487C;
+}
+.form-header-main {
+    padding: 20px;
+}
+.form-header-main h2 {
+    color: #fff;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 34px;
+}
+.form-header {
+    padding: 20px 20px 0;
+}
+.form-header h3 {
+	margin: 0!important;
+	color: #00487C;
+}
+.form-content {
+    padding: 20px;
+}
+div#order-form form .btn {
+	font-size: 16px;
+}
+</style>
+
+<body>
+<!-- ——————— ORDER FORM ——————— -->
+
+<div id="order-form" class="container pt-5">
+	<div class="row">
+		<div class="col col-12 col-md-6 col-lg-5 col-xl-4 ml-auto mr-auto">
+			<form class="form bg-white">
+				<div class="form-header-main bg-secondary">
+					<h2 class="m-0"><i class="fa fa-newspaper-o mr-2" aria-hidden="true"></i> Start Here</h2>
+				</div>
+
+				<div id="formPanel1">					
+					<div class="form-header">
+						<h3>Choose Your Subscription</h3>
+					</div>
+					<div class="form-content">
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="radio" name="levelOne" id="level1" value="option1" checked>
+							<label class="form-check-label" for="level1">1 year <strong>Platinum</strong> Level at <strike>$99</strike> <strong>$79</strong></label>
+						</div>
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="radio" name="levelTwo" id="level2" value="option2">
+							<label class="form-check-label" for="level2">1 year <strong>Gold</strong> Level at <strong>$89</strong></label>
+						</div>
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="radio" name="levelThree" id="level3" value="option3">
+							<label class="form-check-label" for="level3">1 year <strong>Silver</strong> Level at <strong>$49</strong></label>
+						</div>
+						<small class="form-text">When you pay for a subscription to <strong>The Seven-Figure Formula</strong> your credit card will be billed immediately. Then, when your <strong>The Seven-Figure Formula</strong> subscription is about to expire, we will automatically bill your card for an additional year.<br><br>This "auto-renew" feature does not obligate you in any way. What’s more, we’ll give you 30 days after your “auto-renew” charge to receive that year's subscription fee back in full.You will still have the entire length of your trial subscription to review <strong>The Seven-Figure Formula</strong>, entirely risk free.</small>
+						<div class="row">
+							<div class="col"><button id="showPanel2" class="btn btn-danger w-100 mt-4">Next Step »</button></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="formPanel2" style="display:none;">
+					<div class="form-header">
+						<h3>Enter Your Name &amp; Email</h3>
+					</div>
+					<div class="form-content">
+						<div class="row">
+							<div class="form-group col">
+								<label for="firstName">First Name</label>
+								<input type="text" class="form-control" id="firstName">
+							</div>
+							<div class="form-group col">
+								<label for="lastName">Last Name</label>
+								<input type="text" class="form-control" id="lastName">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email1">Email</label>
+							<input type="email" class="form-control" id="email1">
+						</div>
+						<div class="form-group">
+							<label for="email2">Re-Type Email</label>
+							<input type="email" class="form-control" id="email2">
+						</div>
+						<div class="row">
+							<div class="col"><button id="prevPanel1" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
+							<div class="col"><button id="showPanel3" class="btn btn-danger w-100 mt-4">Next »</button></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="formPanel3" style="display:none;">
+					<div class="form-header">
+						<h3>Enter Your Mailing Address</h3>
+					</div>
+					<div class="form-content">
+						<div class="form-group">
+							<label for="address1">Address 1</label>
+							<input type="text" class="form-control" id="address1">
+						</div>
+						<div class="form-group">
+							<label for="address2">Address 2</label>
+							<input type="text" class="form-control" id="address2">
+						</div>
+						<div class="form-group">
+							<label for="city">City</label>
+							<input type="text" class="form-control" id="city">
+						</div>
+						<div class="form-group">
+							<label for="state">State</label>
+							<select class="form-control" id="state">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="zip">Zip/Postal Code</label>
+							<input type="text" class="form-control" id="zip">
+						</div>
+						<div class="form-group">
+							<label for="country">Country</label>
+							<input type="text" class="form-control" id="country">
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input type="number" class="form-control" id="phone">
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="showShipping" checked>
+							<label class="form-check-label" for="showShipping">My shipping address is the same as my mailing address.</label>
+						</div>
+					</div>
+
+					<div id="shipping" style="display:none;">
+						<div class="form-header">
+							<h3>Enter Your Shipping Address</h3>
+						</div>
+						<div class="form-content">
+							<div class="row">
+								<div class="form-group col">
+									<label for="firstNameShipping">First Name</label>
+									<input type="text" class="form-control" id="firstNameShipping">
+								</div>
+								<div class="form-group col">
+									<label for="lastNameShipping">Last Name</label>
+									<input type="text" class="form-control" id="lastNameShipping">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="address1Shipping">Address 1</label>
+								<input type="text" class="form-control" id="address1Shipping">
+							</div>
+							<div class="form-group">
+								<label for="address2Shipping">Address 2</label>
+								<input type="text" class="form-control" id="address2Shipping">
+							</div>
+							<div class="form-group">
+								<label for="cityShipping">City</label>
+								<input type="text" class="form-control" id="cityShipping">
+							</div>
+							<div class="form-group">
+								<label for="stateShipping">State</label>
+								<select class="form-control" id="stateShipping">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="zipShipping">Zip/Postal Code</label>
+								<input type="text" class="form-control" id="zipShipping">
+							</div>
+							<div class="form-group">
+								<label for="countryShipping">Country</label>
+								<input type="text" class="form-control" id="countryShipping">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-content pt-0">
+						<small class="form-text text-dark"><strong>Your purchase may be subject to state sales tax.</strong></small>
+						<div class="row">
+							<div class="col"><button id="prevPanel2" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
+							<div class="col"><button id="showPanel4" class="btn btn-danger w-100 mt-4">Next »</button></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="formPanel4" style="display:none;">
+					<div class="form-header">
+						<h3>Enter Your Billing Information</h3>
+					</div>
+					<div class="form-content">
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="radio" name="visa" id="visa" value="option1">
+							<label class="form-check-label" for="visa">Visa</label>
+							<i class="fa fa-cc-visa ml-1 text-secondary" aria-hidden="true"></i>
+						</div>
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="radio" name="mastercard" id="mastercard" value="option2">
+							<label class="form-check-label" for="mastercard">MasterCard</label>
+							<i class="fa fa-cc-mastercard ml-1 text-secondary" aria-hidden="true"></i>
+						</div>
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="radio" name="discover" id="discover" value="option1">
+							<label class="form-check-label" for="discover">Discover</label>
+							<i class="fa fa-cc-discover ml-1 text-secondary" aria-hidden="true"></i>
+						</div>
+						<div class="form-check mb-3">
+							<input class="form-check-input" type="radio" name="americanExpress" id="americanExpress" value="option2">
+							<label class="form-check-label" for="americanExpress">American Express</label>
+							<i class="fa fa-cc-amex ml-1 text-secondary" aria-hidden="true"></i>
+						</div>
+						<div class="form-group">
+							<label for="cardNumber">Card Number</label>
+							<input type="number" class="form-control" id="cardNumber">
+						</div>
+						<div class="row">
+							<div class="form-group col">
+								<label for="expirationDate">Expiration Date</label>
+								<input type="date" class="form-control" id="expirationDate">
+							</div>
+							<div class="form-group col">
+								<label for="cvvCode">CVV Code </label>
+								<input type="number" class="form-control" id="cvvCode">
+							</div>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="saveCard">
+							<label class="form-check-label" for="saveCard">Save this credit card for future purchases.</label>
+						</div>
+						<div class="form-group mt-3" id="nickname" style="display:none;">
+							<label for="cardNickname">Credit Card Nickname</label>
+							<input type="text" class="form-control" id="cardNickname">
+						</div>
+						<div class="row">
+							<div class="col"><button id="prevPanel3" class="btn btn-outline-danger w-100 mt-4">« Previous</button></div>
+							<div class="col"><button type="submit" class="btn btn-danger w-100 mt-4">Checkout »</button></div>
+						</div>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+</div>
+	<!-- ——————— END ORDER FORM ——————— -->
+
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#showShipping").click(function (){
+				if ($("#showShipping").prop("checked")){
+					$("#shipping").hide();
+				}else{
+					$("#shipping").show();
+				}              
+			});
+		});
+		$(document).ready(function(){
+			$("#saveCard").click(function (){
+				if ($("#saveCard").prop("checked")){
+					$("#nickname").show();
+				}else{
+					$("#nickname").hide();
+				}              
+			});
+		});
+		
+		$('#prevPanel1').on('click', function (e) {
+           $('#formPanel1').show();
+			$('#formPanel2').hide();
+           e.preventDefault();
+        });
+		
+		$('#showPanel2').on('click', function (e) {
+           $('#formPanel2').show();
+			$('#formPanel1').hide();
+           e.preventDefault();
+        });
+		
+		$('#prevPanel2').on('click', function (e) {
+           $('#formPanel2').show();
+			$('#formPanel3').hide();
+           e.preventDefault();
+        });
+		
+		$('#showPanel3').on('click', function (e) {
+           $('#formPanel3').show();
+			$('#formPanel2').hide();
+           e.preventDefault();
+        });
+		
+		$('#prevPanel3').on('click', function (e) {
+           $('#formPanel3').show();
+			$('#formPanel4').hide();
+           e.preventDefault();
+        });
+		
+		$('#showPanel4').on('click', function (e) {
+           $('#formPanel4').show();
+			$('#formPanel3').hide();
+           e.preventDefault();
+        });
+
+	</script>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
